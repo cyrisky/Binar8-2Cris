@@ -1,0 +1,12 @@
+<div class="list-group">
+    <% data.forEach(i => { %>
+        <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1"><%= i.title %></h5>
+                    <small><%= i.fromNow %></small>
+                </div>
+                <p class="mb-1"><%= i.body %></p>
+                <small><%= i.createdAt %></small>
+        </div>
+        <% }) %>
+</div>
